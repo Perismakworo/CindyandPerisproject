@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to the drug dispensing tool</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body >
+    
+        <div class="navbar" style="display: flex;">
+            <div class="icon">
+                <h2 class="logo">Keencure</h2>
+               
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a class="active" href="homepage.html">Home</a></li>
+                    <li><a href="aboutpage.php">About</a></li>
+                    <li><a href="servicepagehtml.php">Services</a></li>
+                    <li><a href="contactpage.php">Contact</a></li>
+                    <li><a href="login2.php">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <style>
+            .navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                color: #FFF;
+                padding: 10px;
+                z-index: 999; /* Set a high z-index value to ensure the menu stays on top of other elements */
+                display: flex; /* Use flexbox for the menu items to align them horizontally */
+                justify-content: space-between; /* Distribute items evenly along the header */
+                align-items: center; /* Center items vertically within the header */
+            }
+
+            .icon {
+                width: 200px;
+                height: 70px;
+            }
+
+            .logo {
+                color: #00bbff;
+                font-size: 25px;
+                font-weight: bold;
+                padding-top: 10px;
+            }
+
+            .menu ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex; /* Use flexbox for the menu items to align them horizontally */
+            }
+
+            .menu ul li {
+                margin-left: 20px;
+            }
+
+            .menu ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 6px 10px;
+                transition: 0.4s ease-in-out;
+                border-radius: 2px;
+            }
+
+            .menu ul li a.active,
+            .menu ul li a:hover {
+                background: #ff7200;
+                color: #000;
+            }
+
+            .container {
+                /* Your container styles here */
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin-top: 100px;
+            }
+
+            /* Add styles for the sign-up button */
+            .signup-button {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                background-color: #ff7200;
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                z-index: 1; /* Ensure the button appears above the slider */
+            }
+
+            .signup-button:hover {
+                background-color: #ff8600;
+            }
+            .welcome-text {
+                position: absolute;
+                top: 50%;
+                left: 220px;
+                transform: translateY(-50%);
+                color: #c08b11;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+                z-index: 2; /* Set a higher z-index to make the text appear on top of the slider */
+            }
+        </style>
+        <div class="container" >
+            <p class="welcome-text">Welcome to Keencure Pharmacy, Join us!! We have the best medical services you need!!!!</p>
+            <a href="userregistration.php" class="signup-button">Sign Up</a>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="8.jpg.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="10.jpg.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="3.jpg.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="4.jpg.jpeg" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 1000, // Set the delay between slides in milliseconds
+                },
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        </script>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Keencure. All rights reserved.</p>
+            </div>
+        </footer>
+        <style>
+            footer {
+                background-color: #ff7200;
+                padding: 10px 0;
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+            .footer-content {
+                color: #131312;
+            }
+        </style>
+</body>
+</html>

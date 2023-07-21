@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("1.jpg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  margin-top: 200px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: white;
+}
+
+form {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.left {
+  margin-top: 20px;
+}
+
+#signupButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #FFF;
+  padding: 10px;
+  z-index: 999; /* Set a high z-index value to ensure the menu stays on top of other elements */
+}
+.icon {
+  width: 200px;
+  height: 70px;
+}
+.logo {
+  color: #00bbff;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+.menu ul li {
+  margin-left: 20px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 10px;
+  transition: 0.4s ease-in-out;
+  border-radius: 2px;
+}
+.menu ul li a.active,
+.menu ul li a:hover {
+  background: #ff7200;
+  color: #000;
+}

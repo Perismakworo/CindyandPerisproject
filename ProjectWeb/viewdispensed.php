@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dispensed Drugs History</title>
+    <style>
+    <!-- Add your CSS styles here -->/* servicepage.css */
+body {
+    background-color: #f1f1f1;
+    background-image: url("1.jpg.jpeg"); /* Replace "background.jpg" with the path to your background image */
+  background-size: cover;
+  background-position: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #008080;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #008080;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #008080;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+ul {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-left: 30px;
+}
+
+blockquote {
+    font-size: 18px;
+    color: #555;
+    border-left: 4px solid #008080;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
+
+blockquote p:last-child {
+    margin-top: 10px;
+}
+
+/* Style the list items (bullets) */
+ul li::before {
+    content: "\2022"; /* Bullet character */
+    color: #008080;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    z-index: 999; /* Set a high z-index value to ensure the menu stays on top of other elements */
+  }
+  
+
+
+.icon {
+    width: 200px;
+    height: 70px;
+}
+
+.logo {
+    color: #00bbff;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 10px;
+    transition: 0.4s ease-in-out;
+    border-radius: 2px;
+}
+
+.menu ul li a.active,
+.menu ul li a:hover {
+    background: #ff7200;
+    color: #000;
+}
+</style>
+
+</head>
+<body>
+    <h1>Dispensed Drugs History</h1>
+    <table border="1">
+        <tr>
+            <th>Patient Name</th>
+            <th>Drug Name</th>
+            <th>Frequency</th>
+            <th>Dispensed Quantity</th>
+            <th>Date Dispensed</th>
+        </tr>
+
+        <!-- Add your PHP code here to display the table rows -->
+
+        <tr>
+            <td>Patient1</td>
+            <td>Drug33</td>
+            <td>Once a day</td>
+            <td>60</td>
+            <td>2023-07-15</td>
+        </tr>
+        <tr>
+            <td>Patient1</td>
+            <td>Drug2</td>
+            <td>Once a day</td>
+            <td>60</td>
+            <td>2023-07-15</td>
+        </tr>
+        <tr>
+            <td>Patient2</td>
+            <td>Drug1</td>
+            <td>Twice a day</td>
+            <td>500mg</td>
+            <td>2023-07-16</td>
+        </tr>
+
+    </table>
+</body>
+</html>

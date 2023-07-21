@@ -1,0 +1,63 @@
+/* Custom CSS for Pharmacist Table */
+
+body {
+    margin: 50px;
+    background-image: url('1.jpg.jpeg');
+    background-size: cover;
+  }
+  
+
+
+h1 {
+  color: #f26724;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f26724;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f26724;
+  border-color: #f26724;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #ff813a;
+  border-color: #ff813a;
+}

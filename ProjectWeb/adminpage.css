@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("1.jpg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  margin-top: 200px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}

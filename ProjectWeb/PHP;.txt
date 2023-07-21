@@ -1,0 +1,24 @@
+PHP;
+<?php
+require_once("conn.php");
+// Establish database connection
+$conn = new mysqli($servername, $username, $password, $database);
+// Post method takes input from user using php and places it in database
+//Reference to it in the method of a form in the html file whats inside the parameters is the name of the
+input.
+// We need to refer to it so that it can work
+$Username = $_POST['Username'];
+$Email = $_POST['Email'];
+$Password= $_POST['Password'];
+if ($conn->connect_error){
+ die('Connection Failed :' .$conn->connect_error);
+}else {
+ $sql = $conn->prepare("insert into login(Username,Email,Password)values(? , ? , ? )");
+ $sql->bind_param("sss",$Username,$Email,$Password);
+ // Finally execute the query
+ $sql->execute();
+ echo "Credentials accepted.";
+ $sql->close();
+ $conn->close();
+}
+?>
